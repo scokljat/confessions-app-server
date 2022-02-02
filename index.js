@@ -1,14 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
 const dotenv = require("dotenv/config");
 const cors = require("cors");
 const postRoutes = require("./routes/posts");
 
 const app = express();
 
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use("/posts", postRoutes);
 
