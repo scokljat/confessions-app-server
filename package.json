@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "anonymous confessions",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -16,8 +15,5 @@
     "express": "^4.17.2",
     "mongoose": "^6.1.8",
     "nodemon": "^2.0.15"
-  },
-  "engines": {
-    "node": "17.x"
   }
 }

@@ -1,11 +1,13 @@
-import express, { Router } from "express";
-import {
+const express = require("express");
+const { Router } = require("express");
+const { model } = require("mongoose");
+const {
   getPosts,
   createPost,
   deletePost,
   likePost,
   unlikePost,
-} from "../controllers/posts.js";
+} = require("../controllers/posts");
 
 const router = express.Router();
 
@@ -14,4 +16,4 @@ router.post("/", createPost);
 router.delete("/:id", deletePost);
 router.patch("/:id/likePost", likePost);
 router.patch("/:id/unlikePost", unlikePost);
-export default router;
+module.exports = router;
