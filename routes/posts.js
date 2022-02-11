@@ -1,6 +1,5 @@
 const express = require("express");
-const { Router } = require("express");
-const { model } = require("mongoose");
+
 const {
   getPosts,
   createPost,
